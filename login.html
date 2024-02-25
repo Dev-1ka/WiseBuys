@@ -4,22 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles1.css">
 </head>
 <body>
-  <div class="login-container">
-    <h2>Login</h2>
-    <form action="#" method="post">
-      <div class="input-group">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required>
-      </div>
-      <div class="input-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <button type="submit">Login</button>
-    </form>
+  <div class="background">
+    <div class="container">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        
+        <button type="submit">Login</button>
+      </form>
+      
+      <p>If you are new, <a href="signup.html">Sign Up</a></p>
+    </div>
   </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+      // You can add your login authentication logic here
+      // For simplicity, let's assume the login is successful and redirect to the home page
+      window.location.href = "index.html"; // Redirect to the home page
+    });
+  </script>
 </body>
 </html>

@@ -1,0 +1,197 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Set body background to white */
+    background-image: url("C:\Users\DEVIKA UNNIKRISHNAN\Desktop\Home page\wp.jpg"); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fixed background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+/* Header styles */
+header {
+    background-color: rgb(1, 1, 60); /* Change black background to navy blue */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Increase width of the navy blue background */
+}
+
+.logo img {
+    margin-left: auto;
+    height: 50px; /* Adjust height as needed */
+}
+
+.app-name {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    margin-left: auto; /* Center WiseBuys text */
+    margin-right: auto;
+    color: #fff; /* White color */
+    font-style: italic; /* Italic font */
+}
+
+.wishlist {
+    margin-left: auto;
+}
+
+.wishlist a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.wishlist a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    background-color: #fff; /* Change light gray background to white */
+    padding: 20px;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 20px;
+    width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 20px 40px;
+    background-color: #0b600f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+.barcode-scanner-icon {
+    width: 80px; /* Adjust the width */
+    height: 80px; /* Adjust the height */
+    margin-left: 10px; /* Adjust the spacing */
+}
+
+/* Adjust the right margin of the circular icons */
+.icons .icon {
+    margin-right: 350px; /* Decrease the right margin */
+}
+
+
+.icons .icon img {
+    width: 150px; /* Adjust the size of the circular icons */
+    height: 150px;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 3 equal-width columns */
+    grid-gap: 0.5px; /* Add some space between grid items */
+    justify-content: center; /* Center the grid horizontally */
+}
+
+.icon {
+    text-align: center; /* Center the icon and label */
+}
+
+.icon img {
+    width: 100px; /* Adjust the size of the circular icons */
+    height: 100px;
+    border-radius: 50%; /* Make the icons circular */
+    margin-bottom: 10px; /* Add some space between the icon and label */
+}
+
+.icon label {
+    color: #000;
+    font-size: 14px;
+}
+
+
+/* Chatbot styling */
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.chatbot-icon {
+    width: 250px; /* Adjust width as needed */
+    height: 250px; /* Adjust height as needed */
+}
+
+.chat-container {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.chat-box {
+    margin-bottom: 10px;
+}
+
+.chat-message {
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+}
+
+.bot-message {
+    background-color: #1b2561;
+    color: #fff;
+    align-self: flex-start;
+}
+
+.user-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.user-input input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #f1c2c2;
+    margin-right: 10px;
+}
+
+.user-input button {
+    padding: 8px 16px;
+    background-color: #045607;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user-input button:hover {
+    background-color: #046409;
+}
+
+/* Animation for WiseBuys */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
