@@ -1,4 +1,5 @@
 Price comparing application
+
 Create an application that allows users to search and compare prices for products across major online retailers like Amazon and Flipkart.
 
 Keyword-based product search.
